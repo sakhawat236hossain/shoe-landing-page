@@ -1,0 +1,341 @@
+/* ======================
+ROOT COLOR VARIABLES
+====================== */
+
+:root {
+  --primary-color: #1a365d; /* Dark blue for primary elements */
+  --secondary-color: #2d3748; /* Gray for secondary text */
+  --accent-color: #e53e3e; /* Red for accents and buttons */
+  --bg-color: #f7fafc; /* Light gray background */
+  --card-bg: #ffffff; /* White for cards */
+  --text-color: #2d3748; /* Dark gray for text */
+  --light-text: #718096; /* Light gray for muted text */
+  --border-color: #e2e8f0; /* Light border */
+  --hover-color: #c53030; /* Darker red for hover */
+}
+
+/* ======================
+COMMON TYPOGRAPHY
+====================== */
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.serif {
+  font-family: "Playfair Display", serif;
+}
+
+/* ======================
+COMMON BUTTON STYLES
+====================== */
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--hover-color);
+}
+
+.btn-secondary {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: 1px solid var(--border-color);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: var(--border-color);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--text-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background-color: var(--card-bg);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* ======================
+COMMON SECTION SPACING
+====================== */
+
+.section-padding {
+  padding: 4rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 4rem 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding: 4rem 4rem;
+  }
+}
+
+/* ======================
+COMMON CONTAINER
+====================== */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 3rem;
+  }
+}
+
+/* ======================
+COMMON CARD STYLE
+====================== */
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* ======================
+COMMON HEADING
+====================== */
+
+.heading-primary {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .heading-primary {
+    font-size: 3rem;
+  }
+}
+
+.heading-secondary {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+/* ======================
+COMMON HOVER EFFECTS
+====================== */
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* ======================
+IMAGE RESPONSIVE
+====================== */
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ======================
+NAVBAR STYLES
+====================== */
+
+.navbar {
+  background-color: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.nav-link {
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--accent-color);
+}
+
+/* ======================
+HERO STYLES
+====================== */
+
+.hero-overlay {
+  background: linear-gradient(135deg, rgba(26, 54, 93, 0.7), rgba(45, 55, 72, 0.5));
+}
+
+.hero-btn {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(229, 62, 62, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.hero-btn:hover::before {
+  left: 100%;
+}
+
+.hero-btn:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(229, 62, 62, 0.4);
+}
+
+/* ======================
+PRODUCT CARD STYLES
+====================== */
+
+.product-card {
+  background-color: var(--card-bg);
+  border-radius: 0.625rem;
+  padding: 0.5rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-badge {
+  background-color: var(--bg-color);
+  color: var(--secondary-color);
+  font-size: 0.5625rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.25rem;
+  letter-spacing: 0.05em;
+}
+
+/* ======================
+FOOTER STYLES
+====================== */
+
+.footer {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.footer-link {
+  color: var(--light-text);
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+.footer-input {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+
+.footer-input::placeholder {
+  color: var(--light-text);
+}
+
+.footer-btn {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: bold;
+  font-size: 0.75rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-btn:hover {
+  background-color: var(--hover-color);
+}</content>
+<parameter name="filePath">D:/projects/shoe-landing-page/assets/css/style.css
