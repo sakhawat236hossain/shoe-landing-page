@@ -1,238 +1,268 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shoe Landing Page</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Covenance | Premium Shoe Store</title>
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-      h1,
-      h2,
-      .serif {
-        font-family: "Playfair Display", serif;
-      }
-    </style>
-  </head>
-  <!--  -->
-  <body class="bg-[#F7F4EF] text-[#2C2C2C]">
-    <header
-      class="py-6 px-6 md:px-12 flex items-center justify-between sticky top-0 bg-[#F7F4EF]/80 backdrop-blur-md z-50"
-    >
-      <!-- Logo -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-      <div class="flex-1">
-        <h1 class="text-xl md:text-2xl font-bold tracking-tighter italic serif">
-          Covenance
-        </h1>
-      </div>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-      <!-- Navigation Links (Desktop) -->
-      <nav class="hidden md:block flex-1">
-        <ul
-          class="flex items-center justify-center gap-10 text-sm font-medium uppercase tracking-widest"
-        >
-          <li><a href="#" class="hover:text-amber-700 transition">Home</a></li>
-          <li><a href="#" class="hover:text-amber-700 transition">Men</a></li>
-          <li><a href="#" class="hover:text-amber-700 transition">Women</a></li>
-          <li>
-            <a href="#" class="hover:text-amber-700 transition">Accessories</a>
-          </li>
-          <li>
-            <a href="#" class="hover:text-amber-700 transition">Contact</a>
-          </li>
-        </ul>
-      </nav>
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .serif { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
 
-      <!-- Cart Button & Search -->
-      <div class="flex items-center justify-end gap-4 md:gap-6 flex-1">
-        <button class="hover:scale-110 transition cursor-pointer">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <circle cx="11" cy="11" r="8" />
-            <path d="m21 21-4.3-4.3" />
-          </svg>
-        </button>
-        <button
-          class="hidden sm:block hover:scale-110 transition cursor-pointer"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-            <circle cx="12" cy="7" r="4" />
-          </svg>
-        </button>
-        <button class="hover:scale-110 transition cursor-pointer relative">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
-            <path d="M3 6h18" />
-            <path d="M16 10a4 4 0 0 1-8 0" />
-          </svg>
-          <span
-            class="absolute -top-2 -right-2 bg-amber-800 text-white text-[10px] rounded-full w-4 h-4 flex items-center justify-center"
-            >0</span
-          >
-        </button>
-      </div>
-    </header>
+<body class="bg-[#F7F4EF] text-[#2C2C2C]">
 
-    <!-- Hero Section -->
+  <!-- Header Section: Logo, Navigation, and Cart Icons -->
+  <header class="py-6 px-6 md:px-12 flex items-center justify-between sticky top-0 bg-[#F7F4EF]/80 backdrop-blur-md z-50">
+    <div class="flex-1">
+      <h1 class="text-xl md:text-2xl font-bold tracking-tighter italic serif">Covenance.</h1>
+    </div>
 
-    <section class="px-4 md:px-8 pb-12">
-      <div
-        class="relative w-full h-[500px] md:h-[600px] rounded-2xl md:rounded-3xl overflow-hidden group"
-      >
-        <img
-          src="https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=2070&auto=format&fit=crop"
-          alt="Hero Shoe"
-          class="w-full h-full object-cover transition duration-700 group-hover:scale-105"
-        />
+    <nav class="hidden md:block flex-1">
+      <ul class="flex items-center justify-center gap-8 text-[11px] font-bold uppercase tracking-[0.2em]">
+        <li><a href="#" class="hover:text-amber-800 transition">Home</a></li>
+        <li><a href="#" class="hover:text-amber-800 transition">Men</a></li>
+        <li><a href="#" class="hover:text-amber-800 transition">Women</a></li>
+        <li><a href="#" class="hover:text-amber-800 transition">Collections</a></li>
+        <li><a href="#" class="hover:text-amber-800 transition">About</a></li>
+      </ul>
+    </nav>
 
-        <div
-          class="absolute inset-0 bg-black/30 flex flex-col justify-center px-8 md:px-16"
-        >
-          <h2
-            class="text-white text-4xl sm:text-5xl md:text-7xl font-bold leading-tight max-w-xs md:max-w-md serif"
-          >
-            Sneakers That Defy Your Everyday Look
-          </h2>
-          <button
-            class="mt-6 md:mt-8 bg-white text-black px-6 py-2 md:px-8 md:py-3 rounded-full font-medium w-fit hover:bg-black hover:text-white transition-all duration-300 cursor-pointer"
-          >
-            Shop Now
-          </button>
-        </div>
+    <div class="flex items-center justify-end gap-5 flex-1">
+      <button class="cursor-pointer hover:scale-110 transition"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></button>
+      <button class="cursor-pointer hover:scale-110 transition"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
+      <button class="cursor-pointer hover:scale-110 transition relative">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="absolute -top-2 -right-2 bg-amber-900 text-white text-[9px] w-4 h-4 rounded-full flex items-center justify-center">0</span>
+      </button>
+    </div>
+  </header>
 
-        <div
-          class="absolute bottom-6 right-6 md:bottom-10 md:right-10 flex gap-3 md:gap-4"
-        >
-          <button
-            class="w-10 h-10 md:w-12 md:h-12 border border-white/50 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-black transition-all duration-300 cursor-pointer backdrop-blur-sm"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="m15 18-6-6 6-6" />
-            </svg>
-          </button>
-
-          <button
-            class="w-10 h-10 md:w-12 md:h-12 border border-white/50 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-black transition-all duration-300 cursor-pointer backdrop-blur-sm"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="m9 18 6-6-6-6" />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Product Showcase -->
-
-    <section class="px-8 py-12">
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    
-    <div class="relative h-[500px] rounded-[2rem] overflow-hidden group">
-      <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=1000&auto=format&fit=crop" 
-           alt="Shoes 1" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
-      <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all"></div>
+  <!-- Hero Section: Main Banner with CTA -->
+  <section class="px-6 md:px-8 pb-12">
+    <div class="relative w-full h-[500px] md:h-[650px] rounded-[2.5rem] overflow-hidden group">
+      <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=2070" 
+           alt="Hero Shoe" class="w-full h-full object-cover transition duration-1000 group-hover:scale-105">
       
-      <div class="absolute inset-0 p-8 flex flex-col justify-end">
-        <div class="absolute top-8 left-1/2 -translate-x-1/2 opacity-80">
-            <svg class="w-8 h-8 text-black" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L1 21h22L12 2z"/></svg>
-        </div>
-        <h3 class="text-white text-xl font-medium leading-tight mb-6">
-          Sneakers That Move With You, Comfortable, Durable, And Always In Style.
-        </h3>
-        <button class="bg-[#2C241E] text-white px-6 py-3 rounded-xl w-fit text-sm hover:bg-black transition-colors cursor-pointer">
-          Find Your Fit
+      <div class="absolute inset-0 bg-black/20 flex flex-col justify-center px-10 md:px-20">
+        <h2 class="text-white text-5xl md:text-7xl font-bold leading-tight max-w-xl serif">
+          Sneakers That Defy Your Everyday Look
+        </h2>
+        <button class="mt-8 bg-white text-black px-10 py-3.5 rounded-full font-semibold w-fit hover:bg-black hover:text-white transition-all duration-300 cursor-pointer uppercase text-xs tracking-widest">
+          Shop Now
+        </button>
+      </div>
+
+      <div class="absolute bottom-10 right-10 flex gap-4">
+        <button class="w-12 h-12 border border-white/50 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-black transition-all cursor-pointer backdrop-blur-md">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <button class="w-12 h-12 border border-white/50 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-black transition-all cursor-pointer backdrop-blur-md">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
         </button>
       </div>
     </div>
+  </section>
 
-    <div class="relative h-[500px] rounded-[2rem] overflow-hidden group">
-      <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=1000&auto=format&fit=crop" 
-           alt="Shoes 2" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
-      <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-all"></div>
+  <!-- Feature Cards Section: Highlighted Categories/Promo -->
+  <section class="px-6 md:px-8 py-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       
-      <div class="absolute inset-0 p-8 flex flex-col justify-end">
-        <div class="absolute top-8 left-1/2 -translate-x-1/2 opacity-80">
-             <svg class="w-10 h-10 text-black" viewBox="0 0 24 24" fill="currentColor"><path d="M21 7L9 19l-5-5 1.41-1.41L9 16.17l10.59-10.59L21 7z"/></svg>
+      <!-- Feature Card 1: Comfortable & Durable -->
+      <div class="relative h-[480px] rounded-[2rem] overflow-hidden group">
+        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=1000" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/20 p-8 flex flex-col justify-end">
+          <h3 class="text-white text-xl font-semibold leading-snug mb-5">Sneakers That Move With You, Comfortable & Durable.</h3>
+          <button class="bg-[#2C241E] text-white px-6 py-3 rounded-xl w-fit text-xs font-bold hover:bg-black transition cursor-pointer">Find Your Fit</button>
         </div>
-        <h3 class="text-white text-xl font-medium leading-tight mb-6">
-          Fresh Drops. Iconic Silhouettes. Sneakers That Speak Before You Do.
-        </h3>
-        <button class="bg-[#2C241E] text-white px-6 py-3 rounded-xl w-fit text-sm hover:bg-black transition-colors cursor-pointer">
-          Get Your Pair
-        </button>
       </div>
+
+      <!-- Feature Card 2: Fresh Drops -->
+      <div class="relative h-[480px] rounded-[2rem] overflow-hidden group border-x-4 border-transparent">
+        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=1000" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/20 p-8 flex flex-col justify-end">
+          <h3 class="text-white text-xl font-semibold leading-snug mb-5">Fresh Drops. Iconic Silhouettes. Speak Before You Do.</h3>
+          <button class="bg-[#2C241E] text-white px-6 py-3 rounded-xl w-fit text-xs font-bold hover:bg-black transition cursor-pointer">Get Your Pair</button>
+        </div>
+      </div>
+
+      <!-- Feature Card 3: Style-Stack -->
+      <div class="relative h-[480px] rounded-[2rem] overflow-hidden group">
+        <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?q=80&w=1000" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/10 flex flex-col items-center justify-center text-center p-8">
+          <h3 class="text-white text-5xl font-bold italic serif tracking-tighter mb-6">STYLE-STACK</h3>
+          <button class="bg-white text-black px-8 py-3 rounded-xl font-bold text-xs hover:bg-gray-100 transition cursor-pointer">Shop Sneakers</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Product Collection Section: Newly Dropped Items -->
+  <section class="px-6 md:px-8 py-20 bg-white rounded-t-[3rem]">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold serif mb-4">Newly Dropped Collections</h2>
+      <p class="text-gray-400 max-w-lg mx-auto text-sm leading-relaxed">
+        These sneakers drops are timeless classics, bringing you authentic kicks built for style and comfort.
+      </p>
     </div>
 
-    <div class="relative h-[500px] rounded-[2rem] overflow-hidden group">
-      <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?q=80&w=1000&auto=format&fit=crop" 
-           alt="Style" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
-      <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-all"></div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
       
-      <div class="absolute inset-0 p-8 flex flex-col items-center justify-center text-center">
-        <h3 class="text-white text-4xl font-bold italic serif tracking-tighter mb-4">
-          STYLE-STACK
-        </h3>
-        <button class="bg-white text-black px-8 py-3 rounded-xl font-semibold shadow-lg hover:bg-gray-100 transition-all cursor-pointer">
-          Shop Sneakers
-        </button>
+      <!-- Product Card 1: Gazelle Indoor Shoes -->
+      <div class="flex flex-col">
+        <div class="bg-[#F3F3F3] rounded-[2.5rem] p-6 mb-4 relative aspect-[4/3] flex items-center justify-center group overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000" class="w-full h-full object-contain transition duration-500 group-hover:scale-110">
+        </div>
+        <div class="flex items-center justify-between mb-1">
+          <span class="text-lg font-bold">$229.96</span>
+          <span class="bg-[#E5DED4] text-[9px] uppercase px-2 py-0.5 rounded font-bold tracking-wider">Men's Sneakers</span>
+        </div>
+        <h3 class="text-base font-bold mb-1">Gazelle Indoor Shoes</h3>
+        <p class="text-gray-500 text-[11px] leading-snug mb-5 line-clamp-2">Classic indoor-ready Gazelle with premium suede upper, earthy tones, and contrast stripes.</p>
+        <div class="flex gap-2">
+          <button class="flex-1 bg-[#E5DED4] py-2.5 rounded-xl font-bold text-[11px] hover:bg-gray-300 transition cursor-pointer">Add to Cart</button>
+          <button class="flex-1 bg-[#8B6E4E] text-white py-2.5 rounded-xl font-bold text-[11px] hover:bg-[#6D553B] transition cursor-pointer">Buy Now</button>
+        </div>
       </div>
+
+      <!-- Product Card 2: Gazelle Indoor Premium -->
+      <div class="flex flex-col">
+        <div class="bg-[#F3F3F3] rounded-[2.5rem] p-6 mb-4 relative aspect-[4/3] flex items-center justify-center group overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1000" class="w-full h-full object-contain transition duration-500 group-hover:scale-110">
+        </div>
+        <div class="flex items-center justify-between mb-1">
+          <span class="text-lg font-bold">$329.96</span>
+          <span class="bg-[#E5DED4] text-[9px] uppercase px-2 py-0.5 rounded font-bold tracking-wider">Premium Edition</span>
+        </div>
+        <h3 class="text-base font-bold mb-1">Gazelle Indoor Premium</h3>
+        <p class="text-gray-500 text-[11px] leading-snug mb-5 line-clamp-2">Sleek Gazelle Indoor in muted green with crisp black/white accents and gum outsole.</p>
+        <div class="flex gap-2">
+          <button class="flex-1 bg-[#E5DED4] py-2.5 rounded-xl font-bold text-[11px] hover:bg-gray-300 transition cursor-pointer">Add to Cart</button>
+          <button class="flex-1 bg-[#8B6E4E] text-white py-2.5 rounded-xl font-bold text-[11px] hover:bg-[#6D553B] transition cursor-pointer">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Product Card 3: Zoom Vomero 5 -->
+      <div class="flex flex-col">
+        <div class="bg-[#F3F3F3] rounded-[2.5rem] p-6 mb-4 relative aspect-[4/3] flex items-center justify-center group overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=1000" class="w-full h-full object-contain transition duration-500 group-hover:scale-110">
+        </div>
+        <div class="flex items-center justify-between mb-1">
+          <span class="text-lg font-bold">$169.99</span>
+          <span class="bg-[#E5DED4] text-[9px] uppercase px-2 py-0.5 rounded font-bold tracking-wider">New Arrival</span>
+        </div>
+        <h3 class="text-base font-bold mb-1">Zoom Vomero 5</h3>
+        <p class="text-gray-500 text-[11px] leading-snug mb-5 line-clamp-2">Bold runner with eye-catching green/purple colorway and dual Zoom Air cushioning.</p>
+        <div class="flex gap-2">
+          <button class="flex-1 bg-[#E5DED4] py-2.5 rounded-xl font-bold text-[11px] hover:bg-gray-300 transition cursor-pointer">Add to Cart</button>
+          <button class="flex-1 bg-[#8B6E4E] text-white py-2.5 rounded-xl font-bold text-[11px] hover:bg-[#6D553B] transition cursor-pointer">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Product Card 4: Gazelle Retro Classic -->
+      <div class="flex flex-col">
+        <div class="bg-[#F3F3F3] rounded-[2.5rem] p-6 mb-4 relative aspect-[4/3] flex items-center justify-center group overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=1000" class="w-full h-full object-contain transition duration-500 group-hover:scale-110">
+        </div>
+        <div class="flex items-center justify-between mb-1">
+          <span class="text-lg font-bold">$219.96</span>
+          <span class="bg-[#E5DED4] text-[9px] uppercase px-2 py-0.5 rounded font-bold tracking-wider">Trending</span>
+        </div>
+        <h3 class="text-base font-bold mb-1">Gazelle Retro Classic</h3>
+        <p class="text-gray-500 text-[11px] leading-snug mb-5 line-clamp-2">Classic indoor-ready Gazelle with crisp contrast stripes and timeless retro appeal.</p>
+        <div class="flex gap-2">
+          <button class="flex-1 bg-[#E5DED4] py-2.5 rounded-xl font-bold text-[11px] hover:bg-gray-300 transition cursor-pointer">Add to Cart</button>
+          <button class="flex-1 bg-[#8B6E4E] text-white py-2.5 rounded-xl font-bold text-[11px] hover:bg-[#6D553B] transition cursor-pointer">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Product Card 5: Air Max Stride -->
+      <div class="flex flex-col">
+        <div class="bg-[#F3F3F3] rounded-[2.5rem] p-6 mb-4 relative aspect-[4/3] flex items-center justify-center group overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=1000" class="w-full h-full object-contain transition duration-500 group-hover:scale-110">
+        </div>
+        <div class="flex items-center justify-between mb-1">
+          <span class="text-lg font-bold">$189.00</span>
+          <span class="bg-[#E5DED4] text-[9px] uppercase px-2 py-0.5 rounded font-bold tracking-wider">Lifestyle</span>
+        </div>
+        <h3 class="text-base font-bold mb-1">Air Max Stride</h3>
+        <p class="text-gray-500 text-[11px] leading-snug mb-5 line-clamp-2">Lightweight cushioning for all-day comfort with a sleek profile for urban streets.</p>
+        <div class="flex gap-2">
+          <button class="flex-1 bg-[#E5DED4] py-2.5 rounded-xl font-bold text-[11px] hover:bg-gray-300 transition cursor-pointer">Add to Cart</button>
+          <button class="flex-1 bg-[#8B6E4E] text-white py-2.5 rounded-xl font-bold text-[11px] hover:bg-[#6D553B] transition cursor-pointer">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Product Card 6: Speed Runner Pro -->
+      <div class="flex flex-col">
+        <div class="bg-[#F3F3F3] rounded-[2.5rem] p-6 mb-4 relative aspect-[4/3] flex items-center justify-center group overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1584466977773-e625c37cdd50?q=80&w=1000" class="w-full h-full object-contain transition duration-500 group-hover:scale-110">
+        </div>
+        <div class="flex items-center justify-between mb-1">
+          <span class="text-lg font-bold">$145.00</span>
+          <span class="bg-[#E5DED4] text-[9px] uppercase px-2 py-0.5 rounded font-bold tracking-wider">Gym Wear</span>
+        </div>
+        <h3 class="text-base font-bold mb-1">Speed Runner Pro</h3>
+        <p class="text-gray-500 text-[11px] leading-snug mb-5 line-clamp-2">High-performance runner featuring a breathable mesh knit upper for maximum speed.</p>
+        <div class="flex gap-2">
+          <button class="flex-1 bg-[#E5DED4] py-2.5 rounded-xl font-bold text-[11px] hover:bg-gray-300 transition cursor-pointer">Add to Cart</button>
+          <button class="flex-1 bg-[#8B6E4E] text-white py-2.5 rounded-xl font-bold text-[11px] hover:bg-[#6D553B] transition cursor-pointer">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Product Card 7: Arctic Flow v2 -->
+      <div class="flex flex-col">
+        <div class="bg-[#F3F3F3] rounded-[2.5rem] p-6 mb-4 relative aspect-[4/3] flex items-center justify-center group overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1512374382149-4332c6c021f1?q=80&w=1000" class="w-full h-full object-contain transition duration-500 group-hover:scale-110">
+        </div>
+        <div class="flex items-center justify-between mb-1">
+          <span class="text-lg font-bold">$275.00</span>
+          <span class="bg-[#E5DED4] text-[9px] uppercase px-2 py-0.5 rounded font-bold tracking-wider">Limited</span>
+        </div>
+        <h3 class="text-base font-bold mb-1">Arctic Flow v2</h3>
+        <p class="text-gray-500 text-[11px] leading-snug mb-5 line-clamp-2">Breathable fabric and a unique frost-blue design for those who want to stand out.</p>
+        <div class="flex gap-2">
+          <button class="flex-1 bg-[#E5DED4] py-2.5 rounded-xl font-bold text-[11px] hover:bg-gray-300 transition cursor-pointer">Add to Cart</button>
+          <button class="flex-1 bg-[#8B6E4E] text-white py-2.5 rounded-xl font-bold text-[11px] hover:bg-[#6D553B] transition cursor-pointer">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Product Card 8: Elevate Mid-Top -->
+      <div class="flex flex-col">
+        <div class="bg-[#F3F3F3] rounded-[2.5rem] p-6 mb-4 relative aspect-[4/3] flex items-center justify-center group overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1000" class="w-full h-full object-contain transition duration-500 group-hover:scale-110">
+        </div>
+        <div class="flex items-center justify-between mb-1">
+          <span class="text-lg font-bold">$195.99</span>
+          <span class="bg-[#E5DED4] text-[9px] uppercase px-2 py-0.5 rounded font-bold tracking-wider">Best Seller</span>
+        </div>
+        <h3 class="text-base font-bold mb-1">Elevate Mid-Top</h3>
+        <p class="text-gray-500 text-[11px] leading-snug mb-5 line-clamp-2">Perfect balance of ankle support and flexibility for everyday wear with leather finish.</p>
+        <div class="flex gap-2">
+          <button class="flex-1 bg-[#E5DED4] py-2.5 rounded-xl font-bold text-[11px] hover:bg-gray-300 transition cursor-pointer">Add to Cart</button>
+          <button class="flex-1 bg-[#8B6E4E] text-white py-2.5 rounded-xl font-bold text-[11px] hover:bg-[#6D553B] transition cursor-pointer">Buy Now</button>
+        </div>
+      </div>
+
     </div>
 
-  </div>
-</section>
-  </body>
+    <div class="flex justify-center mt-20">
+      <button class="px-12 py-3.5 border border-gray-200 bg-[#EBE4DC] rounded-2xl font-bold text-xs uppercase tracking-widest hover:bg-gray-200 transition-all cursor-pointer shadow-sm">
+        See More Collections
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer Section: Copyright Information -->
+  <footer class="py-10 text-center text-gray-400 text-[10px] uppercase tracking-widest">
+    &copy; 2026 Covenance Premium Sneakers. All Rights Reserved.
+  </footer>
+
+</body>
 </html>
