@@ -197,9 +197,19 @@ NAVBAR STYLES
 ====================== */
 
 .navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
   background-color: var(--card-bg);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-color);
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
 }
 
 .nav-link {
@@ -261,9 +271,41 @@ HERO STYLES
   box-shadow: 0 8px 25px rgba(229, 62, 62, 0.4);
 }
 
-/* ======================
-PRODUCT CARD STYLES
-====================== */
+  @media (max-width: 767px) {
+    section.hero-section {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 2rem;
+    }
+
+    section.hero-section > div.relative {
+      height: 420px;
+    }
+
+    section.hero-section .hero-overlay {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    section.hero-section .hero-overlay h2 {
+      font-size: 2.5rem;
+      line-height: 1.05;
+      max-width: 100%;
+    }
+
+    section.hero-section .hero-btn {
+      width: fit-content;
+      padding: 0.9rem 1.75rem;
+      font-size: 0.8rem;
+    }
+
+    .hero-controls {
+      right: 1rem;
+      bottom: 1rem;
+      left: auto;
+      transform: none;
+    }
+  }
 
 .product-card {
   background-color: var(--card-bg);
@@ -339,9 +381,59 @@ FOOTER STYLES
   background-color: var(--hover-color);
 }
 
-/* ======================
-ORDER FORM STYLES
-====================== */
+.footer .footer-subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.footer .footer-subscribe .footer-input {
+  flex: 1 1 260px;
+  min-width: 0;
+}
+
+.footer .footer-subscribe .footer-btn {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .footer .grid {
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  .footer .footer-subscribe {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 100%;
+  }
+
+  .footer .footer-subscribe .footer-btn {
+    width: 100%;
+  }
+
+  .footer .footer-social {
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .footer .footer-social-link {
+    flex: 1 1 calc(50% - 0.75rem);
+    min-width: 140px;
+    padding: 0.75rem 1rem;
+    text-align: center;
+  }
+
+  .footer-link {
+    font-size: 0.95rem;
+  }
+}
 
 .order-form {
   max-width: 100%;
