@@ -466,6 +466,22 @@ FOOTER STYLES
   z-index: 60;
   opacity: 0.8;
   animation: pulse 2s infinite;
+  position: fixed;
+}
+
+.scroll-top-btn::after {
+  content: attr(data-percent) '%';
+  position: absolute;
+  top: -1.1rem;
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  color: #111;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.12rem 0.3rem;
+  border-radius: 0.35rem;
+  opacity: 1;
 }
 
 @keyframes pulse {

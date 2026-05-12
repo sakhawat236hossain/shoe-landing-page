@@ -1136,7 +1136,12 @@
       </div>
     </footer>
     <!-- Scroll to Top Button -->
-    <a href="#top" class="scroll-top-btn" aria-label="Scroll to top">
+    <a
+      href="#top"
+      class="scroll-top-btn"
+      aria-label="Scroll to top"
+      data-percent="0"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="18"
@@ -1152,5 +1157,21 @@
         <path d="M12 20V8"></path>
       </svg>
     </a>
+    <script>
+      const btn = document.querySelector(".scroll-top-btn"); // select the button
+      let lastY = window.scrollY; // previous position
+      let border = 3; // current border width
+      window.addEventListener("scroll", () => {
+        const y = window.scrollY;
+        btn.dataset.percent = Math.round(
+          (y /
+            (document.documentElement.scrollHeight - window.innerHeight || 1)) *
+            100,
+        ); // percent text
+        border = Math.min(10, Math.max(3, border + (y > lastY ? 1 : -1))); // down → thicker, up → thinner
+        btn.style.borderWidth = `${border}px`;
+        lastY = y;
+      });
+    </script>
   </body>
 </html>
