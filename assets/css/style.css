@@ -337,5 +337,52 @@ FOOTER STYLES
 
 .footer-btn:hover {
   background-color: var(--hover-color);
-}</content>
+}
+
+/* ======================
+ORDER FORM STYLES
+====================== */
+
+.order-form {
+  max-width: 100%;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  background-color: #ffffff;
+  color: var(--text-color);
+  padding: 0.95rem 1.1rem;
+  border-radius: 1rem;
+  font-size: 0.95rem;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 4px rgba(26, 54, 93, 0.09);
+}
+
+.form-textarea {
+  min-height: 11rem;
+  resize: vertical;
+}
+
+.shadow-card {
+  box-shadow: 0 16px 40px -25px rgba(26, 54, 93, 0.25);
+}
+</content>
 <parameter name="filePath">D:/projects/shoe-landing-page/assets/css/style.css
